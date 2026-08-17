@@ -4,17 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index,follow" />
+
   <title>Privacy Policy | StreamLine Auto Publisher</title>
 
   <style>
     :root {
       color-scheme: light;
-      --bg: #f5f7fa;
-      --card: #ffffff;
+      --background: #f5f7fa;
+      --surface: #ffffff;
       --text: #17202a;
-      --muted: #5f6b76;
+      --muted: #66717d;
       --border: #e4e8ed;
-      --accent: #1f6feb;
+      --accent: #1877f2;
     }
 
     * {
@@ -23,20 +24,20 @@
 
     body {
       margin: 0;
-      background: var(--bg);
+      background: var(--background);
       color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Helvetica, Arial, sans-serif;
       line-height: 1.65;
     }
 
-    .page {
-      width: min(900px, calc(100% - 32px));
+    main {
+      width: min(920px, calc(100% - 32px));
       margin: 48px auto;
     }
 
-    .card {
-      background: var(--card);
+    article {
+      background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 16px;
       padding: 48px;
@@ -44,7 +45,7 @@
     }
 
     h1 {
-      margin: 0 0 8px;
+      margin: 0 0 6px;
       font-size: 34px;
       line-height: 1.2;
     }
@@ -55,7 +56,8 @@
       font-size: 21px;
     }
 
-    p, li {
+    p,
+    li {
       font-size: 16px;
     }
 
@@ -77,11 +79,11 @@
     }
 
     .notice {
-      margin-top: 26px;
+      margin: 24px 0;
       padding: 18px;
-      background: #f7f9fc;
-      border: 1px solid var(--border);
       border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #f7f9fc;
     }
 
     footer {
@@ -93,11 +95,11 @@
     }
 
     @media (max-width: 640px) {
-      .page {
+      main {
         margin: 20px auto;
       }
 
-      .card {
+      article {
         padding: 26px 22px;
       }
 
@@ -109,8 +111,8 @@
 </head>
 
 <body>
-  <main class="page">
-    <article class="card">
+  <main>
+    <article>
       <h1>Privacy Policy</h1>
 
       <p class="subtitle">
@@ -122,77 +124,82 @@
       </p>
 
       <p>
-        This Privacy Policy describes how StreamLine Auto Publisher
-        ("the Application") accesses and uses information when interacting
-        with Facebook Pages through Meta's APIs.
+        This Privacy Policy explains how StreamLine Auto Publisher
+        ("the Application") accesses, processes, and protects information
+        when interacting with Facebook Pages through Meta's APIs.
       </p>
 
       <p>
-        StreamLine Auto Publisher is an internal business publishing tool
-        used by authorized personnel to prepare, publish, and schedule
-        vehicle-related content on Facebook Pages managed by StreamLine Auto.
+        StreamLine Auto Publisher is an internal business tool used by
+        authorized StreamLine Auto personnel to prepare, publish, and schedule
+        vehicle-related content on Facebook Pages managed or authorized by
+        StreamLine Auto.
       </p>
 
       <h2>1. Purpose of the Application</h2>
 
       <p>
-        The Application is used to streamline the preparation and publication
-        of vehicle listings and related business content.
+        The Application streamlines the preparation and publication of vehicle
+        listings and related business content.
       </p>
 
       <p>
-        Authorized users may prepare post text, select and organize vehicle
-        images, publish posts immediately, or schedule posts for later
-        publication.
-      </p>
-
-      <h2>2. Meta and Facebook Data Access</h2>
-
-      <p>
-        The Application uses the Meta Graph API and Facebook Pages API.
-        It requests only permissions required to operate its Page publishing
-        functionality.
+        Authorized operators may generate and edit post text, select and order
+        vehicle images, publish content immediately, or schedule content for a
+        future publication time.
       </p>
 
       <p>
-        Depending on the configuration approved by Meta, these permissions
-        may include:
+        The Application is not intended to be a consumer-facing Facebook
+        application. Access is limited to authorized business users.
+      </p>
+
+      <h2>2. Meta and Facebook API Access</h2>
+
+      <p>
+        The Application uses the Meta Graph API and Facebook Pages API to
+        perform authorized Page management and publishing operations.
+      </p>
+
+      <p>
+        Depending on the permissions approved and granted through Meta, the
+        Application may use permissions including:
       </p>
 
       <ul>
         <li>
-          <strong>pages_manage_posts</strong> — used to create and manage
-          posts on authorized Facebook Pages.
+          <strong>pages_manage_posts</strong> — to create and manage posts
+          on authorized Facebook Pages.
         </li>
         <li>
-          <strong>pages_read_engagement</strong> — used to access Page
-          information necessary for Page-related API operations.
+          <strong>pages_read_engagement</strong> — to access Page information
+          required for Page-related API operations.
         </li>
         <li>
-          <strong>pages_show_list</strong> — used to identify Facebook Pages
-          that an authorized account or system user has permission to manage.
+          <strong>pages_show_list</strong> — to identify Facebook Pages that
+          an authorized account or system user is permitted to manage.
         </li>
       </ul>
 
       <p>
-        The Application does not request access to Facebook Pages that have
-        not been explicitly authorized for use with the Application.
+        The Application does not intentionally access or publish content to
+        Facebook Pages that have not been explicitly authorized for use with
+        the Application.
       </p>
 
       <h2>3. Information We Process</h2>
 
       <p>
-        The Application may process limited information provided by Meta that
-        is necessary to identify and manage an authorized Facebook Page,
-        including:
+        The Application may process limited information required to operate
+        its publishing functionality, including:
       </p>
 
       <ul>
-        <li>Facebook Page ID;</li>
-        <li>Facebook Page name;</li>
+        <li>Facebook Page identifiers;</li>
+        <li>Facebook Page names;</li>
         <li>Page access permissions and publishing capabilities;</li>
-        <li>identifiers of posts or media created through the Application;</li>
-        <li>API responses required to confirm publication or scheduling.</li>
+        <li>post and media identifiers created through the Application;</li>
+        <li>publication and scheduling results returned by Meta's APIs.</li>
       </ul>
 
       <p>
@@ -203,144 +210,136 @@
       <h2>4. How Information Is Used</h2>
 
       <p>
-        Information accessed through Meta's APIs is used only for legitimate
-        operation of the StreamLine Auto publishing workflow.
+        Information obtained through Meta's APIs is used only to operate the
+        authorized StreamLine Auto publishing workflow.
       </p>
 
-      <p>
-        In particular, it may be used to:
-      </p>
+      <p>This may include:</p>
 
       <ul>
-        <li>identify an authorized Facebook Page;</li>
-        <li>upload vehicle images;</li>
-        <li>publish Page posts;</li>
-        <li>schedule Page posts;</li>
-        <li>confirm whether a publishing request succeeded;</li>
-        <li>retrieve identifiers or permalinks for content created by the Application.</li>
+        <li>identifying an authorized Facebook Page;</li>
+        <li>uploading vehicle images;</li>
+        <li>creating Facebook Page posts;</li>
+        <li>scheduling Facebook Page posts;</li>
+        <li>checking whether publication or scheduling succeeded;</li>
+        <li>
+          retrieving identifiers or permalinks for content created through
+          the Application.
+        </li>
       </ul>
 
-      <h2>5. User Control and Publishing</h2>
+      <h2>5. Publishing Control</h2>
 
       <p>
-        StreamLine Auto Publisher is operated by authorized business users.
-        The Application does not independently select third-party Facebook
-        Pages or publish content to unauthorized Pages.
+        Content publication is initiated or scheduled by an authorized
+        operator of StreamLine Auto Publisher.
       </p>
 
       <p>
-        Content publication is initiated or scheduled through the Application
-        by an authorized operator.
+        The Application does not independently select unrelated Facebook Pages
+        or publish content to Pages that have not been authorized.
       </p>
 
-      <h2>6. Data Sharing and Sale</h2>
+      <h2>6. Sale and Sharing of Data</h2>
 
       <p>
-        We do not sell Facebook or Meta platform data.
-      </p>
-
-      <p>
-        We do not rent Facebook or Meta platform data to third parties and
-        do not use such data for unrelated advertising, profiling, or data
-        brokerage purposes.
+        StreamLine Auto does not sell Facebook or Meta Platform data.
       </p>
 
       <p>
-        Information may be transmitted to service providers strictly when
-        necessary for operating the Application, such as hosting
-        infrastructure used to run the publishing service.
+        We do not rent such data to third parties and do not use it for
+        unrelated advertising, profiling, or data brokerage purposes.
+      </p>
+
+      <p>
+        Information may be processed by infrastructure providers when strictly
+        necessary to host and operate the Application.
       </p>
 
       <h2>7. Data Storage and Retention</h2>
 
       <p>
-        The Application is designed to retain only information necessary to
-        operate its publishing functionality.
+        The Application is designed to retain only the information reasonably
+        necessary to provide its publishing functionality.
       </p>
 
       <p>
-        Facebook Page access credentials are stored securely as server-side
-        configuration and are not exposed to public users through the
-        Application interface.
+        Facebook access credentials are stored as protected server-side
+        configuration and are not intentionally exposed through public
+        client-side application code.
       </p>
 
       <p>
-        Temporary generated vehicle images and post-processing information
-        may be stored for the period necessary to complete the publishing
-        workflow.
+        Temporary vehicle images and generated post information may be stored
+        for the period required to complete the content preparation and
+        publishing workflow.
       </p>
 
       <p>
-        We do not intentionally create a permanent database of Facebook user
-        profile information.
+        The Application does not intentionally maintain a permanent database
+        of Facebook user profile information.
       </p>
 
       <h2>8. Security</h2>
 
       <p>
-        Reasonable technical and organizational measures are used to protect
-        access credentials and the Application.
+        Reasonable technical and organizational safeguards are used to protect
+        application access and credentials.
       </p>
 
       <p>
-        Facebook access tokens and other credentials are stored server-side
-        and are not intended to be embedded in publicly accessible client-side
-        code.
+        Sensitive access tokens and other credentials are maintained
+        server-side and are not intended to be exposed to unauthenticated
+        users.
       </p>
 
-      <h2>9. Data Deletion Requests</h2>
+      <h2>9. Data Deletion</h2>
 
       <p>
-        If you believe the Application has stored information associated with
-        you or your Facebook account and you would like that information
-        deleted, you may submit a deletion request by contacting us at the
-        email address below.
+        Users may request deletion of information associated with their use of
+        the Application.
+      </p>
+
+      <p>
+        Detailed instructions are available on our
+        <a href="./data-deletion/">Data Deletion Instructions</a> page.
       </p>
 
       <div class="notice">
-        <strong>Data deletion contact:</strong><br />
+        <strong>Data deletion contact</strong><br />
         Email:
         <a href="mailto:streamlineauto95@protonmail.com">streamlineauto95@protonmail.com</a>
-        <br /><br />
-        Please include the subject:
-        <strong>StreamLine Auto Publisher – Data Deletion Request</strong>.
       </div>
-
-      <p>
-        After receiving a valid request, we will identify any data associated
-        with the request that is retained by the Application and delete it
-        where required, subject to applicable legal or security obligations.
-      </p>
 
       <h2>10. Third-Party Platforms</h2>
 
       <p>
-        StreamLine Auto Publisher interacts with Meta Platforms, Inc. services,
-        including Facebook and the Meta Graph API.
+        StreamLine Auto Publisher interacts with services provided by Meta
+        Platforms, Inc., including Facebook and the Meta Graph API.
       </p>
 
       <p>
-        Use of Facebook and Meta services is also subject to Meta's own terms,
-        policies, and privacy practices.
+        Use of Meta services is also subject to Meta's own terms, policies,
+        platform rules, and privacy practices.
       </p>
 
-      <h2>11. Changes to This Privacy Policy</h2>
+      <h2>11. Changes to This Policy</h2>
 
       <p>
-        We may update this Privacy Policy when the Application, its
-        functionality, or applicable platform requirements change.
+        We may update this Privacy Policy when the Application, applicable
+        laws, or Meta Platform requirements change.
       </p>
 
       <p>
-        Any updated version will be published at this URL and will include an
-        updated effective date.
+        The latest version will remain available at this URL and will show its
+        effective date.
       </p>
 
       <h2>12. Contact</h2>
 
       <p>
-        For questions about this Privacy Policy, the Application, or data
-        protection matters, contact:
+        Questions regarding this Privacy Policy or the handling of information
+        by StreamLine Auto Publisher may be sent to:
       </p>
 
       <p>
